@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'orbitron';
+    src: url('../fonts/orbitron-black.ttf');
+}
+body{
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+    z-index: 50;
+}
+.navbar-default {
+    background:none;
+    border:none;
+}
+.carousel-control.left, .carousel-control.right{
+    background-image: none !important ;
+}
+.carousel-indicators .active{
+    background-color: #74c7d5;
+}
+.carousel-indicators li, .carousel-indicators .active{
+    width: 14px;
+    height: 14px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+    color: #fff;
+    background-color: #243d41;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.navbar-default .navbar-nav > li > a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbar-nav > li > a{
+    padding-top: 22px
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;    
+    padding-top: 22px;
+    font-family: orbitron
+}
+.carousel-indicators{
+    bottom: 75px;
+}
+.contactus .form-control{
+    background-color: #243d41;
+    border: #243d41;
+}
+.contactus .form-control{
+    background-color: #243d41;
+    border: #243d41;
+    color: #6eaaa2;
+}
+::placeholder{
+    background-color: #243d41;
+    border: #243d41;
+    color: #6eaaa2;
+}
+
