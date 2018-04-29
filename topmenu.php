@@ -1,8 +1,15 @@
+<?php require_once 'const.php'; ?>
 <?php
-$baseUrl = 'http://localhost/nocinc18/';
-$css = 'http://localhost/nocinc18/css/';
-$js = 'http://localhost/nocinc18/js';
-$plugins = 'http://localhost/nocinc18/plugins/';
+$css = BASE_URL . 'css/';
+$js = BASE_URL . 'js';
+$plugins = BASE_URL . 'plugins/';
+$img = BASE_URL . 'images/';
+
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];
+} else {
+    $page = 'home';
+}
 ?>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -20,11 +27,11 @@ $plugins = 'http://localhost/nocinc18/plugins/';
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Customer Review</a></li>
-                <li><a href="#">Contact Us</a></li>                
+                <li <?php echo $page == 'home' ? 'class="active"' : ''; ?>><a href="<?php echo BASE_URL; ?>">Home <?php echo $page == 'home' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>
+                <li <?php echo $page == 'aboutus' ? 'class="active"' : ''; ?>><a href="aboutus.php?page=aboutus">About Us <?php echo $page == 'aboutus' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>
+                <li <?php echo $page == 'services' ? 'class="active"' : ''; ?>><a href="index.php?page=services">Services <?php echo $page == 'services' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>
+                <li <?php echo $page == 'customerreview' ? 'class="active"' : ''; ?>><a href="customer_review.php?page=customerreview">Customer Review <?php echo $page == 'customerreview' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>
+                <li <?php echo $page == 'contactus' ? 'class="active"' : ''; ?>><a href="index.php?page=contactus">Contact Us <?php echo $page == 'contactus' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>                
             </ul>            
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
