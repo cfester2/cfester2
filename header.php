@@ -1,8 +1,14 @@
+<?php require_once 'const.php'; ?>
 <?php
-$baseUrl = 'http://localhost/nocinc18/';
-$css = 'http://localhost/nocinc18/css/';
-$js = 'http://localhost/nocinc18/js';
-$plugins = 'http://localhost/nocinc18/plugins/';
+$css = BASE_URL . 'css/';
+$js = BASE_URL . 'js';
+$plugins = BASE_URL . 'plugins/';
+$img = BASE_URL . 'images/';
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];
+} else {
+    $page = 'home';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,10 +20,10 @@ $plugins = 'http://localhost/nocinc18/plugins/';
         <title>CCF Computing</title>
 
         <!-- Bootstrap -->
-        <link href="<?php echo $css; ?>bootstrap.min.css" rel="stylesheet">
-        <link href="<?php echo $plugins; ?>font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="<?php echo $css; ?>bootstrap.min.css" rel="stylesheet">                
         <link href="<?php echo $css; ?>main.css" rel="stylesheet">
         <link href="<?php echo $css; ?>reset.css" rel="stylesheet">
+        <link href="<?php echo $css; ?>fontawesome/web-fonts-with-css/css/fontawesome.min.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +31,7 @@ $plugins = 'http://localhost/nocinc18/plugins/';
           <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        
+
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     </head>
-    <body>
+    <body class='<?php echo $page; ?>'>

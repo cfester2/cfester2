@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('http://fortawesome.github.io/Font-Awesome/assets/font-awesome/font/fontawesome-webfont.eot?v=3.2.1');
+    src: url('http://fortawesome.github.io/Font-Awesome/assets/font-awesome/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('http://fortawesome.github.io/Font-Awesome/assets/font-awesome/font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('http://fortawesome.github.io/Font-Awesome/assets/font-awesome/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('http://fortawesome.github.io/Font-Awesome/assets/font-awesome/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 .intro .wrapper{
     background-image: url('../images/home-bg.jpg');
     background-size: cover;
@@ -10,9 +17,10 @@
     background-repeat: no-repeat;
     margin-top: -60px;
     padding-bottom: 80px;
+    padding-top: 10%;
 }
 .section-intro{
-    padding-top: 6%;    
+    padding-top: 4%;    
     color: #fff8f7;
 }
 .section-intro .main-disc{    
@@ -30,7 +38,7 @@
     font-weight: normal;
 }
 .section-windows .thumbnail{
-    background-color: #b72a31;
+    background-color: #630b10;
     border: #b72a31;
     border-radius: 0;
 }
@@ -41,13 +49,14 @@
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    border: 5px solid #fff;
+    /*border: 5px solid #fff;*/
     margin: 38px auto;
 }
-.service-icons img{
+.service-icons img {
     background-color: #fff;
-    padding: 15px;
-    margin: 5px;
+    padding: 0px;
+    margin: 0;
+    width: 100px;
 }
 .section-window-heading{
     text-align: center;
@@ -63,13 +72,29 @@
     color: #fff8f7;
     text-align: center
 }
+/*
+Contact us
+*/ 
 .contactus .wrapper{
-    background-image: url('../images/home-bg-3.jpg');
+    background-image: url('../images/about-us-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -60px;
     padding-bottom: 80px;
+    padding-top: 10%;
 }
+.contactus .btn.btn-warning{
+    margin-top: 6px;
+    background-color: #db464f;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    width: 150px;
+
+}
+/*
+Contact us ends
+*/ 
 #map {
     height: 250px;
     width: 100%;
@@ -94,7 +119,35 @@ textarea.form-control {
 .g-recaptcha{
     margin-top: 6px;
 }
-.contactus .btn.btn-warning{
+
+
+.social{
+    float: left;
+    padding: 0px;
+}
+.social img{ 
+    width: 35px;
+    height: 35px;
+}
+
+.social-holder{
+    /*    width: 300px;*/
+    width: 50px;
+    margin: 0 auto
+}
+/*
+Customer review
+*/
+.customer-review .wrapper{
+    background-image: url('../images/about-us-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -60px;
+    padding-bottom: 80px;
+    color: #cccccc;
+    padding-top: 10%;
+}
+.customer-review .btn.btn-warning{
     margin-top: 6px;
     background-color: #db464f;
     font-weight: bold;
@@ -102,12 +155,174 @@ textarea.form-control {
     border: none;
     width: 150px;
 }
-.footer{
+/* star rating */
+.rating {
+    unicode-bidi:bidi-override;
+    direction:rtl;
+    font-size:30px;
+    text-align: left
+}
+.rating span.star,.rating span.star {
+    font-family:FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+    display:inline-block;
+}
+.rating span.star:hover,.rating span.star:hover {
+    cursor:pointer;
+}
+.rating span.star:before,.rating span.star:before {
+    font-family: FontAwesome;
+    content:"\f006";
+    padding-right:5px;
+    color:#BEC3C7;
+}
+.rating span.star:hover:before,.rating span.star:hover:before,.rating span.star:hover ~ span.star:before,.rating span.star:hover ~ span.star:before {
+    font-family: FontAwesome;
+    content:"\f005";
+    color: #41CAC0;
+}
+.customer-review textarea{
     background-color: #243d41;
-    padding: 20px;
-    color: #fff;
+    color: #555;
+}
+
+/*
+Customer review Ends
+*/
+
+/*
+About us
+*/
+.aboutus .wrapper{
+    background-image: url('../images/about-us-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -60px;
+    padding-bottom: 80px;
+    padding-top: 10%;
+}
+/*
+About us ends
+*/
+/*
+Page load Holder
+*/
+.page-load-holder{
+    display: none;
+}
+.page-load-holder .wrapper{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -60px;
+    padding-bottom: 80px;
+}
+.footer{
+    /*background-color: #243d41;*/
+    /*padding: 20px;*/
+    border-top: thin solid #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #cccccc;
     text-align: center;
 }
-.social{
+/*
+footer background colors
+*/
+.footer.home{
+    /*background-color: #243d41;*/
+    background-color: #0b0e0f;
+}
+.footer.aboutus{
+    /*background-color: #243d41;*/
+    background-color: #0b0e0f;
+}
+.footer.services{
+    /*background-color: #b72a31;*/
+    background-color: #0b0e0f;
+}
+.footer.customerreview{
+    /*background-color: #243d41;*/
+    background-color: #0b0e0f;
+}
+.footer.contactus{
+    /*background-color: #243d41;*/
+    background-color: #0b0e0f;
+}
 
+/*
+Body
+*/
+body.home{
+    background-color: #243d41;
+}
+body.aboutus{
+    background-color: #243d41;
+}
+body.services{
+    background-color: #630b10;
+}
+body.customerreview{
+    background-color: #243d41;
+}
+body.contactus{
+    background-color: #243d41;
+}
+/*
+menu active color
+*/
+.home.navbar-default .navbar-nav > .active > a, .home.navbar-default .navbar-nav > .active > a:focus, .home.navbar-default .navbar-nav > .active > a:hover{
+    background-color: #243d41;
+}
+.aboutus.navbar-default .navbar-nav > .active > a, .aboutus.navbar-default .navbar-nav > .active > a:focus, .aboutus.navbar-default .navbar-nav > .active > a:hover{
+    background-color: #243d41;
+}
+.services.navbar-default .navbar-nav > .active > a, services.navbar-default .navbar-nav > .active > a:focus, services.navbar-default .navbar-nav > .active > a:hover{
+    background-color: #b72a31;
+}
+.customerreview.navbar-default .navbar-nav > .active > a, customerreview.navbar-default .navbar-nav > .active > a:focus, customerreview.navbar-default .navbar-nav > .active > a:hover{
+    background-color: #243d41;
+}
+.contactus.navbar-default .navbar-nav > .active > a, contactus.navbar-default .navbar-nav > .active > a:focus, contactus.navbar-default .navbar-nav > .active > a:hover{
+    background-color: #243d41;
+}
+.service-pages{
+    text-decoration: none !important;
+}
+
+/* mobile devices (tablets, 768px and small) */
+@media (max-width: 768px) {
+    .navbar-brand{
+        display: none;
+    }
+}
+
+/* mobile devices (Mobile, 768px and small) */
+@media (max-width: 768px) {
+    #carousel-example-generic{
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+}
+/* mobile devices (tablets, 992px and wider than 768px mobile) */
+@media (max-width: 992px) and (min-width: 767px){
+    #carousel-example-generic{
+        padding-top: 22%;
+        padding-bottom: 20%;
+    }
+}
+/* mobile devices (tablets, 992px and wider than 768px mobile) */
+@media (max-width: 1199px) and (min-width: 991px){
+    #carousel-example-generic{
+        padding-top: 10%;
+        padding-bottom: 15%;
+    }
+}
+/* mobile devices (tablets, 992px and wider than 768px mobile) */
+@media (min-width: 1200px){
+    #carousel-example-generic{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 }
