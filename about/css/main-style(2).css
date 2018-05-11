@@ -1,0 +1,102 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../font/orbitron-black.ttf);
+}
+body{
+    font-family: myFirstFont;
+    background-color: #000;
+}
+.navbar-brand {
+    padding: 5px 15px;
+}
+.navbar-default {
+    background-color: #0e0d0d;
+    border-color: #000;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 18px;
+}
+.nav-brand-image{
+    width: 80px;
+}
+.navbar {
+    border-radius: 0px;
+}
+#bs-example-navbar-collapse-1{
+    padding: 18px;
+}
+.intro-window{
+    background-image: url('../images/computers2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.intro-window h1{
+    padding: 10.5%;
+    font-size: 88px;
+    color: #fff;
+    text-decoration: underline;
+}
+.about-link{
+    margin-top: -10%;
+    color: #999999;
+}
+.intro-section .col-xs-12{
+    padding: 0;
+    margin: 0;
+}
+.intro-section.container-fluid{
+    padding: 0;
+    margin-top: -20px;
+}
+.footer{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.footer-bar{
+    background-color: #0e0d0d;
+    color: #cccccc;
+    font-size: 12px;
+    padding: 20px;
+    font-family: sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;    
+}
+.tooltip{
+    font-size: 18px !important;
+}
+.detail-boxes{
+    min-height: 485px;
+    padding-top: 15%;
+}
+.detail-boxes.map{
+    min-height: 485px;
+    padding-top: 0 !important;
+}
+#map {
+    min-height: 485px;
+    width: 100%;
+}
+.description-list{
+    list-style-type:disc;
+}
+.change-number-system{
+    list-style-type: upper-roman;
+}
+.change-unorderd-list{
+    list-style-type: circle;
+}
+.lists{
+    min-height: 200px;
+}
+.sub-menu{
+    margin: 20px 0;
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .container > .navbar-header {
+        padding-bottom: 28px;
+    }
+}
