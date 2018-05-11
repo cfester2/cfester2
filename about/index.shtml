@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSC128: Making a Homepage in Linux Lab</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="colin, about colin, contact colin, ccf">
+        <meta name="keywords" content="colin, about colin, contact colin, ccf">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <!--include bootstrap-->
+        <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!--include font awesom-->
+        <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />        
+        <!--Main css file to use with custom css-->
+        <link href="css/main-style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/cf.jpg" class="nav-brand-image"/>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.shtml">Home<span class="sr-only">(current)</span></a></li>                                                
+                        <li class=""><a href="about.shtml">About<span class="sr-only"></span></a></li>                                                
+                        <li class=""><a href="contact.shtml">Contact<span class="sr-only"></span></a></li>                                                
+                        <li class=""><a href="assignment.shtml">Assignment<span class="sr-only"></span></a></li>                                                
+                    </ul>      
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container-fluid intro-section">
+            <div class="col-xs-12">
+                <div class="col-xs-12 intro-window">
+                    <h1 class="text-center">
+                        Welcome 
+                    </h1>
+                    <div class="text-center about-link">
+                        <a href="about.shtml"  data-toggle="tooltip" title="Colin Charles Fester" class="tooltip-ccf">
+                            To About CCF                            
+                        </a>                        
+						<div>
+						
+				
+						</div>
+						<div>
+					
+				
+		
+						</div>
+					
+						</a>
+                    </div>
+                    <div class="about-link-reset"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="footer">
+            <div class="footer-bar">
+                <div class="container text-center">
+                    <div class="pull-left">©CCF</div> <div class="pull-right">Updated: 		<!--#config timefmt="%A %B %d, %Y" --><!--#flastmod file="index.shtml" --></div>                   
+                </div>
+            </div>
+        </section>
+        <!--jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--Bootstrap js-->
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    </body>
+  </html>

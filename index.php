@@ -11,7 +11,7 @@ $img = BASE_URL . 'images/';
 <section class="intro">
     <div class="wrapper">
         <!--<div class="container">-->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="9000">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -26,6 +26,9 @@ $img = BASE_URL . 'images/';
                 </div>                
                 <div class="item">
                     <img class="col-lg-12" src="<?php echo $img; ?>slider/2.png" alt="...">    
+                </div>                
+                <div class="item">
+                    <img class="col-lg-12" src="<?php echo $img; ?>slider/3.png" alt="...">    
                 </div>                
             </div>
 

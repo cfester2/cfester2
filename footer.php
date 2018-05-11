@@ -16,13 +16,21 @@ if (isset($_GET['page'])) {
     <div class="footer-bar">
         <div class="container text-center">
             <div class="social-holder">
-                <div class="social"><img src="<?php echo $img; ?>fb.png" /></div>                  
+                <div class="social"><a href="https://www.facebook.com/ccfcomputing"><img src="<?php echo $img; ?>fb.png" /></a></div>                  
                 <!--<div class="social"><img src="<?php echo $img; ?>tw.png" /></div>-->                  
                 <!--<div class="social"><img src="<?php echo $img; ?>g+.png" /></div>-->                  
                 <!--<div class="social"><img src="<?php echo $img; ?>in.png" /></div>-->                  
             </div>
             <div class="clearfix"></div>
-            <p>&COPY; Copyright <?php echo date('Y'); ?> | <a style="text-decoration: none; color: #fff;" href="<?php echo BASE_URL; ?>">CCF Computing</a></p>
+            <p class="pull-left">&COPY; Copyright <?php echo date('Y'); ?> | <a style="text-decoration: none; color: #fff;" href="<?php echo BASE_URL; ?>">CCF Computing</a></p>
+            <?php
+            $filename = basename($_SERVER['PHP_SELF']);
+            $modified = date("d F Y ", filemtime($filename));
+            ?>
+            <p class="pull-right">
+                <!--                Updated: Friday May 11, 2018-->
+                <?php echo "Last modified: " . $modified; ?>
+            </p>
         </div>
     </div>
 </section>
@@ -34,7 +42,7 @@ if (isset($_GET['page'])) {
 
     });
     function initMap() {
-        var uluru = {lat: 40.521046, lng: -88.070407};
+        var uluru = {lat: 40.4593954, lng: -88.1063688};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 10,
             center: uluru

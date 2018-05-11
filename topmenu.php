@@ -29,9 +29,9 @@ if (isset($_GET['page'])) {
             <ul class="nav navbar-nav navbar-right">
                 <li <?php echo $page == 'home' ? 'class="active"' : ''; ?>><a href="<?php echo BASE_URL; ?>">Home <?php echo $page == 'home' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>
                 <li <?php echo $page == 'services' ? 'class="active"' : ''; ?>><a href="services.php?page=services">Services <?php echo $page == 'services' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>
-                <li <?php echo $page == 'aboutus' ? 'class="active"' : ''; ?>><a href="aboutus.php?page=aboutus">About Us <?php echo $page == 'aboutus' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>
-                <li <?php echo $page == 'customerreview' ? 'class="active"' : ''; ?>><a href="customer_review.php?page=customerreview">Customer Review <?php echo $page == 'customerreview' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>
-                <li <?php echo $page == 'contactus' ? 'class="active"' : ''; ?>><a href="contactus.php?page=contactus">Contact Us <?php echo $page == 'contactus' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>                
+                <!--<li <?php echo $page == 'aboutus' ? 'class="active"' : ''; ?>><a href="aboutus.php?page=aboutus">About Us <?php echo $page == 'aboutus' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>-->
+                <li <?php echo $page == 'testimonial' ? 'class="active"' : ''; ?>><a href="testimonial.php?page=testimonial">Testimonials <?php echo $page == 'testimonial' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>
+                <li <?php echo $page == 'contactus' ? 'class="active"' : ''; ?>><a href="contactus.php?page=contactus">Contact <?php echo $page == 'contactus' ? '<span class="sr-only">(current)</span>' : ''; ?></a></li>                
             </ul>            
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

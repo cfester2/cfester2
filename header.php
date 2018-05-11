@@ -23,8 +23,9 @@ if (isset($_GET['page'])) {
         <link href="<?php echo $css; ?>bootstrap.min.css" rel="stylesheet">                
         <link href="<?php echo $css; ?>main.css" rel="stylesheet">
         <link href="<?php echo $css; ?>reset.css" rel="stylesheet">
-        <link href="<?php echo $css; ?>fontawesome/web-fonts-with-css/css/fontawesome.min.css" rel="stylesheet">
-
+        <link href="<?php echo $css; ?>font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>

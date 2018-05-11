@@ -15,10 +15,10 @@ $img = BASE_URL . 'images/';
                     SERVICES
                 </h1>
                 <p class="main-disc">
-                    Some text here
+                    All your computer issues can be fixed
                 </p>
                 <p class="sub-disc">
-                    Some text here
+                    Experts are here to help you
                 </p>
             </div>
             <div class="section-windows">
@@ -26,7 +26,7 @@ $img = BASE_URL . 'images/';
                     <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 thumbnail">
                         <div class="service-icons">
                             <a class="service-pages" href="computer_repair.php">
-                                <img src="<?php echo $img; ?>service-icons-1.png" class="img-circle" />
+                                <img src="<?php echo $img; ?>../images/services/repair.png" class="img-circle" />
                             </a>
 
                         </div>
@@ -41,8 +41,12 @@ $img = BASE_URL . 'images/';
                         </div>
                         <div class="section-window-description">
                             <p>
-                                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-                                It was popularised in the 1960s with the release
+                               Everything from major problems to simple upgrades,
+                               we can fix and help with any of your electronic issues.
+
+                        
+
+                                
                             </p>
                         </div>
                     </div>
@@ -50,7 +54,7 @@ $img = BASE_URL . 'images/';
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 thumbnail">
                         <div class="service-icons">
-                            <img src="<?php echo $img; ?>service-icons-1.png" class="img-circle" />
+                            <img src="<?php echo $img; ?>../images/services/recovery.png" class="img-circle" />
                         </div>
                         <div class="section-window-heading">
                             <h3>
@@ -59,47 +63,49 @@ $img = BASE_URL . 'images/';
                         </div>
                         <div class="section-window-description">
                             <p>
-                                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-                                It was popularised in the 1960s with the release
-                                It was popularised in the 1960s with the release
+                                Deleted a file on your computer? Formatted by mistake? We can help you restore all of your files.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+
+                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 thumbnail">
                         <div class="service-icons">
-                            <img src="<?php echo $img; ?>service-icons-1.png" class="img-circle" />
+                            <img src="<?php echo $img; ?>../images/services/discounts.png" class="img-circle" />
                         </div>
                         <div class="section-window-heading">
                             <h3>
-                                Computer repair
+                                Discount Software & Hardware
                             </h3>
                         </div>
                         <div class="section-window-description">
                             <p>
-                                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-                                It was popularised in the 1960s with the release
-                                It was popularised in the 1960s with the release
+                               We have the cheapest software and hardware. Antivirus to desktops, lapstops, and upgrades such as memory and hard drives.
                             </p>
+
+
+
+                
                         </div>
                     </div>
                 </div>               
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 thumbnail">
                         <div class="service-icons">
-                            <img src="<?php echo $img; ?>service-icons-1.png" class="img-circle" />
+                            <img src="<?php echo $img; ?>../images/services/consulting.png" class="img-circle" />
                         </div>
                         <div class="section-window-heading">
                             <h3>
-                                Computer repair
+                                Consulting
                             </h3>
                         </div>
                         <div class="section-window-description">
                             <p>
-                                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-                                It was popularised in the 1960s with the release
-                                It was popularised in the 1960s with the release
+                               We can advise you on any of your computer related questions. If you would like a webpage made,
+                               need to setup or expand your network, or just wondering what type of anit-virus program is the best
+                               now a days. We are here to help you with everything you might want or need.
                             </p>
                         </div>
                     </div>
@@ -109,3 +115,17 @@ $img = BASE_URL . 'images/';
     </div>
 </section>
 <?php require_once 'footer.php'; ?>
+<script>
+    $(document).ready(function () {
+        $('#services .thumbnail').on('mouseover', function () {
+            $(this).css({
+                borderTop : '10px solid #243d41',
+            });
+        });
+        $('#services .thumbnail').on('mouseout', function () {
+            $(this).css({
+                border : 'none'
+            });
+        });
+    });
+</script>
