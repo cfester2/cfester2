@@ -1,3 +1,0 @@
-Git hub will not load index.php as a default page
-
-Use ccfcomputing.com for updates
