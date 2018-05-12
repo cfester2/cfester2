@@ -229,20 +229,20 @@ footer background colors
 Body
 */
 body.home{
-    background-color: #243d41;
+    background-color: #000;
 }
 body.aboutus{
     background-color: #243d41;
 }
 body.services{
     /*background-color: #630b10;*/
-    background-color: #243d41;
+    background-color: #000;
 }
 body.testimonial{
-    background-color: #243d41;
+    background-color: #000;
 }
 body.contactus{
-    background-color: #243d41;
+    background-color: #000;
 }
 /*
 Backgrounds
@@ -317,7 +317,9 @@ menu active color
     padding-left: 5px;
     padding-right: 5px;    
 }
-
+.section-windows .thumbnail{
+    min-height: 460px;
+}
 /* mobile devices (tablets, 768px and small) */
 @media (max-width: 768px) {
     .navbar-brand{
