@@ -58,7 +58,7 @@ $img = BASE_URL . 'images/';
                         </div>
                         <div class="section-window-heading">
                             <h3>
-                                Computer repair
+                                Data Recovery
                             </h3>
                         </div>
                         <div class="section-window-description">
